@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Inicio</title>
+  <style>
+    /* Paleta de colores */
+    :root {
+      --burbujas-claro: #EEFCFD;
+      --burbujas-oscuro: #0F2F3D;
+      --azul-claro: #F4F6FA;
+      --azul-oscuro: #292D42;
+      --boton-hover: #0A1A29;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--azul-claro);
+      color: var(--burbujas-oscuro);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: var(--burbujas-claro);
+      color: var(--burbujas-oscuro);
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: var(--boton-hover);
+      color: var(--burbujas-claro);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenido al Menú de Inicio</h1>
+  <button onclick="window.location.href='/api/registros_usuarios'">Ver Usuarios</button>
+  <button onclick="window.location.href='/api/registros_iot'">Ver Registros IoT</button>
+  <button onclick="window.location.href='/api/login'">Login</button>
+</body>
+</html>
